@@ -5,6 +5,13 @@ $('body').terminal(
         }
     },
 
+    {
+        linkedin: function() {
+            window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
+        }
+
+    },
+
     // {
     //     help: function() {
     //         this.echo(
