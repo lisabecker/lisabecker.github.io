@@ -5,21 +5,21 @@ $('body').terminal(
         }
     },
 
-    {
-        github: function() {
-            this.echo('Opening GitHub...');
-            window.open('https://github.com/lisabecker', '_blank');
-        }
+    // {
+    //     github: function() {
+    //         this.echo('Opening GitHub...');
+    //         window.open('https://github.com/lisabecker', '_blank');
+    //     }
 
-    },
+    // },
 
-    {
-        linkedin: function() {
-            this.echo('Opening LinkedIn...');
-            window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
-        }
+    // {
+    //     linkedin: function() {
+    //         this.echo('Opening LinkedIn...');
+    //         window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
+    //     }
 
-    },
+    // },
 
     {
         resume: function() {
@@ -44,6 +44,7 @@ $('body').terminal(
     // }
 
     {
+        completion: true,
         greetings: greetings.innerHTML
     }
 );
