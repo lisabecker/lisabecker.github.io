@@ -6,10 +6,25 @@ $('body').terminal(
     },
 
     {
+        github: function() {
+            this.echo('Opening GitHub...');
+            window.open('https://github.com/lisabecker', '_blank');
+        }
+
+    },
+
+    {
         linkedin: function() {
+            this.echo('Opening LinkedIn...');
             window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
         }
 
+    },
+
+    {
+        resume: function() {
+            this.echo('Downloading resume...');
+        }
     },
 
     // {
@@ -17,7 +32,7 @@ $('body').terminal(
     //         this.echo(
     //             'about - Get to know more about me in a nutshell'
     //             + ''
-    //             + 'email - Write me a love letter'
+    //             + 'email - Write me a love letter' :(
     //             + 'github - Check out my repos'
     //             + 'help - Looks like you already figured that out!'
     //             + 'linkedin - Connect with me on LinkedIn'
