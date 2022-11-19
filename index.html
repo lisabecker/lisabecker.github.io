@@ -8,7 +8,7 @@
         <!-- <link rel="stylesheet" href="terminal/style.css"> -->
     </head>
 
-    <!-- <body>
+    <body>
         <template id="greetings">
             _   _ _____ _     _     ___   __        _____  ____  _     ____
            | | | | ____| |   | |   / _ \  \ \      / / _ \|  _ \| |   |  _ \
@@ -19,28 +19,6 @@
            Type 'help' and press enter to see available commands.
            If you prefer a more traditional homepage, visit me here.
         </template>
-
-        <!-- <script src="terminal/index.js"></script> -->
-
-        <!-- <script>
-            $('body').terminal(
-                {
-                    hello: function(what) {
-                        this.echo('Hello, ' + what +
-                                '. Wellcome to this terminal.');
-                    },
-
-                    linkedin: function() {
-                        this.echo('Opening LinkedIn...');
-                        window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
-                },
-
-                {
-                    greetings: greetings.innerHTML
-                });
-            </script>
-
-    </body> -->
 
     <body>
         <script>
@@ -61,11 +39,11 @@
                     window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
                 },
 
-
             },
 
             {
-                greetings: 'My First Web Terminal'
+                completion: true,
+                greetings: greetings.innerHTML
             }
         );
         </script>
