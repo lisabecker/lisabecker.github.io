@@ -39,8 +39,8 @@
                     window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
                 },
 
-                resume: function(e) {
-                    e.preventDefault();  //stop the browser from following
+                resume: function() {
+                    this.ech('Downloading resume...')
                     window.location.href('assets/functionalsample.pdf');
                 },
             },
