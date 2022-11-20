@@ -9,3 +9,7 @@ div {
 span {
     --size: 1.4;
 }
+
+.cmd-cursor {
+    --original-color: white;
+}
