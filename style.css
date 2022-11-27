@@ -1,9 +1,9 @@
 :root {
     /* General */
-    --font_family:;
-    --font_size:;
-    --background_color:;
-    --background_image: url('assets/background.png');
+    --font_family: verdana, sans-serif;
+    --font_size: 14px;
+    --background_color: ;
+    --background_image: url('assets/background.jpg');
 
     /* Header */
     --title_color: rgb(0, 0, 0);
@@ -35,7 +35,19 @@ body {
     font-size: var(--subtitle_size);
 }
 
-.about{
+.collapsible{
+
+}
+
+.link_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.link_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
