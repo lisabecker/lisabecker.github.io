@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Lisa Becker</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+        <link rel="stylesheet" href="terminal/style.css">
+    </head>
+
+    <body>
+        <template id="greetings">
+            _   _ _____ _     _     ___   __        _____  ____  _     ____
+           | | | | ____| |   | |   / _ \  \ \      / / _ \|  _ \| |   |  _ \
+           | |_| |  _| | |   | |  | | | |  \ \ /\ / / | | | |_) | |   | | | |
+           |  _  | |___| |___| |__| |_| |   \ V  V /| |_| |  _ <| |___| |_| |
+           |_| |_|_____|_____|_____\___/     \_/\_/  \___/|_| \_\_____|____/
+
+           Type 'help' and press enter to see available commands.
+           If you prefer a more traditional homepage, visit me <a href='./index.html'>here</a>.
+
+        </template>
+
+        <script>
+        $('body').terminal(
+            {
+                clear: function() {
+                    this.clear();
+                },
+
+                help: function() {
+                    this.echo('I am glad you are asking for help. There are no stupid questions!');
+                    term.echo($('<table></table>'))
+                },
+
+                github: function() {
+                    this.echo('Opening GitHub in new tab...');
+                    window.open('https://github.com/lisabecker', '_blank');
+                },
+
+                linkedin: function() {
+                    this.echo('Opening LinkedIn in a new tab...');
+                    window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
+                },
+
+                resume: function() {
+                    this.echo('Opening resume in a new tab...');
+                    window.open('./assets/functionalsample.pdf', '_blank');
+                },
+
+                speaking: function() {
+                    this.echo('Opening overview of public speaking events in a new tab...');
+                    window.open('https://github.com/lisabecker/public-speaking', '_blank');
+                },
+            },
+
+            {
+                completion: true,
+                greetings: greetings.innerHTML
+            }
+        );
+        </script>
+    </body>
+</html>

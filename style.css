@@ -1,0 +1,58 @@
+:root {
+    /* General */
+    --font_family:;
+    --font_size:;
+    --background_color:;
+    --background_image: url('assets/background.png');
+
+    /* Header */
+    --title_color: rgb(0, 0, 0);
+    --title_size: 2em;
+    --subtitle_size: 1.5em;
+
+    /* Link List */
+    --button_background_color: #1d1e24;
+    --button_text_color: rgb(0, 0, 0);
+    --button_text_hover_color: #d7e04f;
+
+    /* Footer */
+    --footer_color: ;
+}
+
+body {
+    font: var(--font_size) var(--font_family);
+    background: var(--background_color) var(--background_image) no-repeat center;
+}
+
+/* Header */
+.header h1 {
+    color: var(--title_color);
+    font-size: var(--title_size);
+}
+
+.header h2 {
+    color: var(--title_color);
+    font-size: var(--subtitle_size);
+}
+
+.about{
+
+}
+
+.link_button {
+
+}
+
+.link_button:hover {
+    color: #1d1e24;
+    transform: scale(1.02);
+    transition: 0.10s ease;
+}
+
+.socials_button {
+
+}
+
+.footer {
+    color: var(--footer_color)
+}

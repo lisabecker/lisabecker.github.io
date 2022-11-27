@@ -1,55 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Lisa Becker</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
-        <link rel="stylesheet" href="terminal/style.css">
-    </head>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Lisa Becker</title>
+    <link rel='stylesheet' href='/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class='container'>
+        <!-- Profile Picture, Name, Title -->
+        <header>
+            <div>
+                <img src="/assets/profile.png" alt="Lisa Becker's profile picture.">
+            </div>
+            <div>
+                <h1>Lisa Becker</h1>
+            </div>
+            <div>
+                <h2>Machine Learning</h2>
+            </div>
+            <div>
+                <h3>I learn things, and make things, and make machines learn things.
+                </h3>
+            </div>
+        </header>
+        <!-- Connect with me -->
+        <socials>
+            <!-- E-Mail -->
+            <div class='socials_button'>
+                <a href='mailto:beckerlisa93@gmail.com?subject=Email via your website'>
+                </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class='socials_button'>
+                <a href='https://www.linkedin.com/in/becker-lisa/'>
 
-    <body>
-        <template id="greetings">
-            _   _ _____ _     _     ___   __        _____  ____  _     ____
-           | | | | ____| |   | |   / _ \  \ \      / / _ \|  _ \| |   |  _ \
-           | |_| |  _| | |   | |  | | | |  \ \ /\ / / | | | |_) | |   | | | |
-           |  _  | |___| |___| |__| |_| |   \ V  V /| |_| |  _ <| |___| |_| |
-           |_| |_|_____|_____|_____\___/     \_/\_/  \___/|_| \_\_____|____/
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div class='socials_button'>
+                <a href='https://github.com/lisabecker'>
 
-           Type 'help' and press enter to see available commands.
-           If you prefer a more traditional homepage, visit me here.
-        </template>
-
-    <body>
-        <script>
-        $('body').terminal(
-            {
-                hello: function(what) {
-                    this.echo('Hello, ' + what +
-                            '. Wellcome to this terminal.');
-                },
-
-                github: function() {
-                    this.echo('Opening GitHub in new tab...');
-                    window.open('https://github.com/lisabecker', '_blank');
-                },
-
-                linkedin: function() {
-                    this.echo('Opening LinkedIn in a new tab...');
-                    window.open('https://www.linkedin.com/in/becker-lisa/', '_blank');
-                },
-
-                resume: function() {
-                    this.echo('Downloading resume...');
-                    window.open('assets/functionalsample.pdf', '_blank');
-                },
-            },
-
-            {
-                completion: true,
-                greetings: greetings.innerHTML
-            }
-        );
-        </script>
-        </body>
+                </a>
+            </div>
+        </socials>
+        <!-- Link Collection -->
+        <linklist>
+            <div class='link_button about'>
+                <p>
+                    Hi! My name is Lisa Becker I'm and based in Ghent, Belgium.
+                    I'm passionate about. In my free time I love playing the cello,
+                    taking care of my house plants, exploring nature, scuba diving
+                    or meditating. Please <a href='mailto:beckerlisa93@gmail.com?subject=Cup of tea'>
+                    hit me up</a> if you want to meet for a cup of tea, share book recommendations
+                    or go on an adventure together. Oh, and I'm a certified yoga teacher
+                    and give classes to my colleagues at ML6.
+                </p>
+            </div>
+            <!-- Education -->
+            <div class='link_button about'>
+                <p>
+                </p>
+            </div>
+            <!-- Wage Work -->
+            <div class='link_button about'>
+                <p>
+                </p>
+            </div>
+            <!-- Terminal Website-->
+            <div class='link_button'>
+                <a href='/terminal/index.html' target='_blank'>Terminal Website</a>
+            </div>
+            <!-- Public Speaking -->
+            <div class='link_button'>
+                <a href='https://github.com/lisabecker/public-speaking' target='_blank'>Public Speaking</a>
+            </div>
+            <!-- Resume -->
+            <div class='link_button'>
+                <a href='/assets/functionalsample.pdf' target='_blank'>Resume</a>
+            </div>
+        </linklist>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>
+            Lisa Becker | Background image by <a href='https://unsplash.com/@minhphamdesign' target='_blank'>Minh Pham</a>.
+        </p>
+    </footer>
+</body>
 </html>
