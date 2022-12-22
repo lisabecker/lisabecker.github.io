@@ -4,15 +4,15 @@
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Lisa Becker</title>
-    <link rel='stylesheet' href='/style.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' href='./style.css'>
 </head>
 <body>
-    <div class='container'>
+    <div class='main_container'>
+
         <!-- Profile Picture, Name, Title -->
-        <header>
-            <div>
-                <img src='./assets/profile.png' alt="Lisa Becker's profile picture">
+        <div class='header_container'>
+            <div class='profile-image'>
+                <img src='./assets/lisa.png' alt="Lisa Becker's profile picture">
             </div>
             <div>
                 <h1>Lisa Becker</h1>
@@ -24,34 +24,33 @@
                 <h3>I learn things, and make things, and make machines learn things.
                 </h3>
             </div>
-        </header>
+        </div>
+
         <!-- Connect with me -->
-        <socials>
+        <div class='socials_container'>
             <!-- E-Mail -->
-            <div class='socials_button'>
-                <a href='mailto:beckerlisa93@gmail.com?subject=Email via your website'>
-                    <img src='./assets/email.png' alt='E-Mail icon'>
-                </a>
-            </div>
+            <a style="text-decoration: none" href='mailto:beckerlisa93@gmail.com?subject=Email via your website'>
+                <img class='socials_button' src='./assets/email.png' alt='E-Mail icon'>
+            </a>
             <!-- LinkedIn -->
-            <div class='socials_button'>
-                <a href='https://www.linkedin.com/in/becker-lisa/'>
-                    <img src='./assets/linkedin.png' alt='LinkedIn icon'>
-                </a>
-            </div>
+            <a style="text-decoration: none" href='https://www.linkedin.com/in/becker-lisa/'>
+                <img class='socials_button' src='./assets/linkedin.png' alt='LinkedIn icon'>
+            </a>
             <!-- GitHub -->
-            <div class='socials_button'>
-                <a href='https://github.com/lisabecker'>
-                    <img src='./assets/github.png' alt='GitHub icon'>
-                </a>
-            </div>
-        </socials>
+            <a style="text-decoration: none" href='https://github.com/lisabecker'>
+                <img class='socials_button' src='./assets/github.png' alt='GitHub icon'>
+            </a>
+        </div>
+
         <!-- Link Collection -->
-        <linklist>
-            <div class='link_button about'>
+        <div class='links_container'>
+
+            <!-- About -->
+            <div class='link_button collapsible'>About</div>
+            <div class='link_button_content'>
                 <p>
-                    Hi! My name is Lisa Becker I'm and based in Ghent, Belgium.
-                    I'm passionate about. In my free time I love playing the cello,
+                    Hi! My name is Lisa Becker. I'm and based in Ghent, Belgium.
+                    In my free time I love playing the cello,
                     taking care of my house plants, exploring nature, scuba diving
                     or meditating. Please <a href='mailto:beckerlisa93@gmail.com?subject=Cup of tea'>
                     hit me up</a> if you want to meet for a cup of tea, share book recommendations
@@ -59,35 +58,61 @@
                     and give classes to my colleagues at ML6.
                 </p>
             </div>
+
             <!-- Education -->
-            <div class='link_button about'>
+            <div class='link_button collapsible'>Education</div>
+            <div class='link_button_content'>
                 <p>
+                    <b>University of Potsdam</b><br>
+                    <b>BSc:</b> General Theoretical Linguistics<br>
+                    <b>MSc:</b> Cognitive Systems<br>
+                    Member of student council<br>
+                    Scholarship holder (Rosa Luxemburg foundation)<br>
                 </p>
             </div>
-            <!-- Wage Work -->
-            <div class='link_button about'>
+
+            <!-- Work Experience -->
+            <div class='link_button collapsible'>Work Experience</div>
+            <div class='link_button_content'>
                 <p>
+                    I've been employed at ML6 as a Machine Learning Engineer
+                    since June 2021. There I accelerate businesses by designing
+                    and developing end-to-end solutions for our clients. <br><br>
+                    Example project: <br>
+                    <b>Reimplementation of Google Cloud Natural Language API:</b> <br>
+                    Decrease monthly usage cost from €450.000 (Google’s tool) to
+                    €30.000 (my implementation) by combining multiple open source
+                    tools and optimising the extraction of focus words for the
+                    client’s needs on GCP.
                 </p>
             </div>
+
             <!-- Terminal Website-->
             <div class='link_button'>
-                <a href='/terminal/index.html' target='_blank'>Terminal Website</a>
+                <a style="text-decoration: none" href='/terminal/index.html' target='_blank'>Terminal Website</a>
             </div>
+
             <!-- Public Speaking -->
             <div class='link_button'>
-                <a href='https://github.com/lisabecker/public-speaking' target='_blank'>Public Speaking</a>
+                <a style="text-decoration: none" href='https://github.com/lisabecker/public-speaking' target='_blank'>Public Speaking</a>
             </div>
+
             <!-- Resume -->
             <div class='link_button'>
-                <a href='/assets/functionalsample.pdf' target='_blank'>Resume</a>
+                <a style="text-decoration: none" href='/assets/functionalsample.pdf' target='_blank'>Resume</a>
             </div>
-        </linklist>
+        </div>
+
     </div>
+
     <!-- Footer -->
-    <footer>
+    <div class='footer_container'>
         <p>
             Lisa Becker | Background image by <a href='https://unsplash.com/@minhphamdesign' target='_blank'>Minh Pham</a>.
         </p>
-    </footer>
+    </div>
+
+    <script src='./main.js'></script>
+
 </body>
 </html>
