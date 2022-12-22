@@ -1,8 +1,10 @@
 .terminal,
 span,
 .cmd,
+
 div {
-    --color: rgba(0, 128, 0, 0.99);
+    --color: #D8CFC4;
+    --background-color: #303030;
 }
 
 .terminal,
@@ -11,5 +13,5 @@ span {
 }
 
 .cmd-cursor {
-    --original-color: white;
+    --original-color: #D8CFC4;
 }
