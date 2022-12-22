@@ -16,10 +16,9 @@
            |  _  | |___| |___| |__| |_| |   \ V  V /| |_| |  _ <| |___| |_| |
            |_| |_|_____|_____|_____\___/     \_/\_/  \___/|_| \_\_____|____/
 
-           Welcome to my terminal website! I'm Lisa Becker.<br>
-           Type 'help' and press enter to see available commands.<br>
-           If you prefer a more traditional homepage, visit me <a href='./index.html'>here</a>.
-
+           Welcome to my terminal website! I'm Lisa Becker.
+           Type 'help' and press enter to see available commands.
+           If you prefer a more traditional homepage, kindly visit me <a href='./index.html'>here</a>.
         </template>
 
         <script>
@@ -31,7 +30,7 @@
 
                 help: function() {
                     this.echo('I am glad you are asking for help. There are no stupid questions!');
-                    term.echo($('<table></table>'))
+                    term.echo($('<table><tr><th>Clear</th><th>Clear terminal.</th></tr></table>'));
                 },
 
                 github: function() {
