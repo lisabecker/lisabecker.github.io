@@ -24,7 +24,6 @@ body {
     font: var(--font_size) var(--font_family);
     background-image: url('./assets/background.jpg');
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -39,17 +38,15 @@ body {
 }
 
 /* Header */
-.header h1 {
-    color: var(--title_color);
-    font-size: var(--title_size);
+.header_container h2 {
+    margin-bottom: 0;
 }
 
-.header h2 {
-    color: var(--title_color);
-    font-size: var(--subtitle_size);
+.header_container h3 {
+    margin-top: 0;
 }
 
-.profile-image img{
+.header_container img{
     width: 180px;
     height: 180px;
     border-radius: 50%;

@@ -10,13 +10,13 @@
 
     <body>
         <template id="greetings">
-            _   _ _____ _     _     ___   __        _____  ____  _     ____
-           | | | | ____| |   | |   / _ \  \ \      / / _ \|  _ \| |   |  _ \
-           | |_| |  _| | |   | |  | | | |  \ \ /\ / / | | | |_) | |   | | | |
-           |  _  | |___| |___| |__| |_| |   \ V  V /| |_| |  _ <| |___| |_| |
-           |_| |_|_____|_____|_____\___/     \_/\_/  \___/|_| \_\_____|____/
+            ,--.  ,--.,--.        ,--.,--.              ,--.   ,--.                   ,-----.               ,--.
+            |  '--'  |`--'        |  ||  |,--,--,--.    |  |   `--' ,---.  ,--,--.    |  |) /_  ,---.  ,---.|  |,-. ,---. ,--.--.
+            |  .--.  |,--.        |  |`-' |        |    |  |   ,--.(  .-' ' ,-.  |    |  .-.  \| .-. :| .--'|     /| .-. :|  .--'
+            |  |  |  ||  |,--.    |  |    |  |  |  |    |  '--.|  |.-'  `)\ '-'  |    |  '--' /\   --.\ `--.|  \  \\   --.|  |
+            `--'  `--'`--''-,/    `--'    `--`--`--'    `-----'`--'`----'  `--`--'    `------'  `----' `---'`--'`--'`----'`--'
 
-           Welcome to my terminal website! I'm Lisa Becker.
+           Welcome to my terminal website!
            Type 'help' and press enter to see available commands.
            If you prefer a more traditional homepage, kindly visit me <a href='./index.html'>here</a>.
         </template>
@@ -30,7 +30,15 @@
 
                 help: function() {
                     this.echo('I am glad you are asking for help. There are no stupid questions!');
-                    this.echo($('<table><tr><th>Clear</th><th>Clear terminal.</th></tr></table>'));
+                    this.echo($("<table style=width: 50%;>\
+                        <tr>\
+                            <th>Clear</th><th>Clear terminal.</th>\
+                            <th>Github</th><th>Open Lisa's GitHub page in new browser tab.</th>\
+                            <th>LinkedIn</th><th>Open Lisa's LinkedIn page in new browser tab.</th>\
+                            <th>Public Speaking</th><th>Open Lisa's past and planned speaking engagements in new browser tab with speaker slides.</th>\
+                            <th>Resume</th><th>Open Lisa's resume in new browser tab.</th>\
+                        </tr>\
+                        </table>"));
                 },
 
                 github: function() {
