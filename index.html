@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Lisa Becker</title>
     <link rel='stylesheet' href='./style.css'>
+    <script>
+        $.getStyle = function(url, callback) {
+            var link = $('<link href="' + url + '"rel=stylesheet"/>');
+            if (callback) {
+                link.on('load', callback);
+            }
+        }
+    </script>
 </head>
 <body>
     <div class='main_container'>
@@ -95,7 +103,7 @@
 
             <!-- Terminal Website-->
             <div class='link_button'>
-                <a style="text-decoration: none" href='/terminal/index.html' target='_blank'>Terminal Website</a>
+                <a style="text-decoration: none" href='/terminal/index.html'>Terminal Website</a>
             </div>
         </div>
 

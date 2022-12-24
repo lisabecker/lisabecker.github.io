@@ -10,10 +10,10 @@
 
     <body>
         <template id="greetings">
-             __ __ _  __  ____ _          __    _             ___             __
-            / // /(_)/ / /  _/( )__ _    / /   (_)___ ___ _  / _ ) ___  ____ / /__ ___  ____
-           / _  // //_/ _/ /  |//  ' \  / /__ / /(_-</ _ `/ / _  |/ -_)/ __//  '_// -_)/ __/
-          /_//_//_/(_) /___/   /_/_/_/ /____//_//___/\_,_/ /____/ \__/ \__//_/\_\ \__//_/
+    <!-- __ __ _  __    ____ _           __    _              ___             __
+   / // /(_)/ /   /  _/( )__ _     / /   (_)___ ___ _   / _ ) ___  ____ / /__ ___  ____
+  / _  // //_/   _/ /  |//  ' \   / /__ / /(_-</ _ `/  / _  |/ -_)/ __//  '_// -_)/ __/
+ /_//_//_/(_)   /___/   /_/_/_/  /____//_//___/\_,_/  /____/ \__/ \__//_/\_\ \__//_/ -->
 
     Welcome to my terminal website!
     Type 'help' and press enter to see available commands.
@@ -38,19 +38,23 @@
                         </tr>\
                         <tr>\
                             <td style='border:none;padding: 4px;'>Github</td>\
-                            <td style='border:none;padding: 4px;'>Open Lisa's GitHub page.</td>\
+                            <td style='border:none;padding: 4px;'>Open my GitHub profile.</td>\
+                        </tr>\
+                        <tr>\
+                            <td style='border:none;padding: 4px;'>Homepage</td>\
+                            <td style='border:none;padding: 4px;'>Open my graphical homepage.</td>\
                         </tr>\
                         <tr>\
                             <td style='border:none;padding: 4px;'>LinkedIn</td>\
-                            <td style='border:none;padding: 4px;'>Open Lisa's LinkedIn page.</td>\
+                            <td style='border:none;padding: 4px;'>Open my LinkedIn profile.</td>\
                         </tr>\
                         <tr>\
                             <td style='border:none;padding: 4px;'>Public Speaking</td>\
-                            <td style='border:none;padding: 4px;'>Open Lisa's past and planned speaking engagements with speaker slides.</td>\
+                            <td style='border:none;padding: 4px;'>Open my past and planned speaking engagements with speaker slides.</td>\
                         </tr>\
                         <tr>\
                             <td style='border:none;padding: 4px;'>Resume</td>\
-                            <td style='border:none;padding: 4px;'>Open Lisa's resume.</td>\
+                            <td style='border:none;padding: 4px;'>Open my resume.</td>\
                         </tr>\
                         </table>"));
                 },
@@ -58,6 +62,11 @@
                 github: function() {
                     this.echo('Opening GitHub in new tab...');
                     window.open('https://github.com/lisabecker', '_blank');
+                },
+
+                homepage: function() {
+                    this.echo('Opening graphical homepage in new tab...');
+                    window.open('./index.html');
                 },
 
                 linkedin: function() {
