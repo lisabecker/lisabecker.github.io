@@ -48,6 +48,11 @@
                     this.echo("as well as scholarship holder of the Rosa Luxemburg foundation.")
                 },
 
+                github: function() {
+                    this.echo('Opening GitHub in new tab...');
+                    window.open('https://github.com/lisabecker', '_blank');
+                },
+
                 help: function() {
                     this.echo('I am glad you are asking for help. There are no stupid questions!')
                     this.echo('Here are the commands you can execute:');
@@ -92,14 +97,15 @@
                         </table>"));
                 },
 
-                github: function() {
-                    this.echo('Opening GitHub in new tab...');
-                    window.open('https://github.com/lisabecker', '_blank');
-                },
-
                 homepage: function() {
                     this.echo('Opening graphical homepage in new tab...');
                     window.open('./index.html');
+                },
+
+                image: function() {
+                    const img = $('<img src="./assets/lisa.png' +
+                      500 + '/' + 500 + '">');
+                   this.echo(img);
                 },
 
                 linkedin: function() {
