@@ -10,6 +10,11 @@
 
     <body>
         <template id="greetings">
+        $.terminal.new_formatter([
+            /<a href="([^"]+)">([^>]+)<\/a>/g, '[[!;;;;$1]$2]'
+        ]);
+
+        term.echo('<a href="https://terminal.jcubic.pl">jQuery Terminal</a>')
     __ __ _  __    ____ _           __    _              ___             __
    / // /(_)/ /   /  _/( )__ _     / /   (_)___ ___ _   / _ ) ___  ____ / /__ ___  ____
   / _  // //_/   _/ /  |//  ' \   / /__ / /(_-</ _ `/  / _  |/ -_)/ __//  '_// -_)/ __/
@@ -34,6 +39,7 @@
                     this.echo("if you want to meet for a cup of tea, share book recommendations");
                     this.echo("or go on an adventure together. Oh, and I'm a certified yoga teacher");
                     this.echo("and give classes to my colleagues at ML6.");
+                    this.echo("");
                 },
 
                 clear: function() {
@@ -42,10 +48,11 @@
 
                 education: function() {
                     this.echo("University of Potsdam:");
-                    this.echo("Bachelor of Science: General Theoretical Linguistics (2014)");
-                    this.echo("Master of Science: Cognitive Systems (2021)");
+                    this.echo("* Bachelor of Science: General Theoretical Linguistics (2014)");
+                    this.echo("* Master of Science: Cognitive Systems (2021)");
                     this.echo("I also used to be a member of my respective student council");
-                    this.echo("as well as scholarship holder of the Rosa Luxemburg foundation.")
+                    this.echo("as well as scholarship holder of the Rosa Luxemburg foundation.");
+                    this.echo("");
                 },
 
                 github: function() {
@@ -79,6 +86,10 @@
                             <td style='border:none;padding: 4px;'>Open my graphical homepage.</td>\
                         </tr>\
                         <tr>\
+                            <td style='border:none;padding: 4px;'>Image</td>\
+                            <td style='border:none;padding: 4px;'>If you want to see my face.</td>\
+                        </tr>\
+                        <tr>\
                             <td style='border:none;padding: 4px;'>LinkedIn</td>\
                             <td style='border:none;padding: 4px;'>Open my LinkedIn profile.</td>\
                         </tr>\
@@ -95,6 +106,7 @@
                             <td style='border:none;padding: 4px;'>My work experience and project examples.</td>\
                         </tr>\
                         </table>"));
+                        this.echo("");
                 },
 
                 homepage: function() {
@@ -104,7 +116,7 @@
 
                 image: function() {
                     const img = $('<img src="./assets/lisa.png' +
-                      500 + '/' + 500 + '">');
+                      '500/500' + '">');
                    this.echo(img);
                 },
 
@@ -124,16 +136,17 @@
                 },
 
                 work: function() {
-                    this.echo("I've been employed at ML6 as a Machine Learning Engineer"),
-                    this.echo("since June 2021. There I accelerate businesses by"),
-                    this.echo("designing and developing end-to-end solutions for our clients."),
-                    this.echo(""),
-                    this.echo("Example project:"),
-                    this.echo("Reimplementation of Google Cloud Natural Language API:"),
-                    this.echo("Decrease monthly usage cost from €450.000 (Google’s tool)"),
-                    this.echo("to €30.000 (my implementation) by combining multiple"),
-                    this.echo("open source tools and optimising the extraction of"),
-                    this.echo("focuswords for the client’s needs on GCP.'")
+                    this.echo("I've been employed at ML6 as a Machine Learning Engineer");
+                    this.echo("since June 2021. There I accelerate businesses by");
+                    this.echo("designing and developing end-to-end solutions for our clients.");
+                    this.echo("");
+                    this.echo("Example project:");
+                    this.echo("Reimplementation of Google Cloud Natural Language API:");
+                    this.echo("Decrease monthly usage cost from €450.000 (Google’s tool)");
+                    this.echo("to €30.000 (my implementation) by combining multiple");
+                    this.echo("open source tools and optimising the extraction of");
+                    this.echo("focuswords for the client’s needs on GCP.'");
+                    this.echo("");
                 },
             },
 
