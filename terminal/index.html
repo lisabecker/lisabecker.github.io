@@ -20,7 +20,7 @@
 
     Welcome to my terminal website!
     Type 'help' and press enter to see available commands.
-    If you prefer a more traditional homepage, go to https://lisabecker.github.io.
+    If you prefer a more traditional homepage, go to https://www.lisabecker.github.io.
         </template>
 
         <script>
@@ -81,10 +81,6 @@
                             <td style='border:none;padding: 4px;'>Open my graphical homepage.</td>\
                         </tr>\
                         <tr>\
-                            <td style='border:none;padding: 4px;'>Image</td>\
-                            <td style='border:none;padding: 4px;'>If you want to see my face.</td>\
-                        </tr>\
-                        <tr>\
                             <td style='border:none;padding: 4px;'>LinkedIn</td>\
                             <td style='border:none;padding: 4px;'>Open my LinkedIn profile.</td>\
                         </tr>\
@@ -107,12 +103,6 @@
                 homepage: function() {
                     this.echo('Opening graphical homepage in new tab...');
                     window.open('./index.html');
-                },
-
-                image: function() {
-                    const img = $('<img src="./assets/lisa.png' +
-                      '500/500' + '">');
-                   this.echo(img);
                 },
 
                 linkedin: function() {
