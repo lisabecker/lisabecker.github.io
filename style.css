@@ -2,8 +2,6 @@
     /* General */
     --font_family: verdana, sans-serif;
     --font_size: 14px;
-    --background-size: 500px;
-
 
     /* Header */
     --title_color: #303030;
@@ -24,7 +22,7 @@ body {
     font: var(--font_size) var(--font_family);
     background-image: url('/assets/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .main_container {
@@ -118,6 +116,7 @@ body {
     color: var(--footer_text_color);
     background: var(--footer_color);
     text-align: center;
+    align-items: center;
 }
 
 /* Hyperlinks */
