@@ -23,9 +23,8 @@
 body {
     font: var(--font_size) var(--font_family);
     background-image: url('/assets/background.jpg');
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 
 .main_container {
