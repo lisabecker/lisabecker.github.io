@@ -22,7 +22,7 @@
 
 body {
     font: var(--font_size) var(--font_family);
-    background-image: url('./assets/background.jpg');
+    background-image: url('/assets/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -72,8 +72,6 @@ body {
     transition: 0.10s ease;
 }
 
-/* Links */
-
 .link_container {
     display: flex;
     flex-direction: row;
@@ -122,6 +120,7 @@ body {
     text-align: center;
 }
 
+/* Hyperlinks */
 a:link, a:visited {
     color: var(--button_color);
 }
